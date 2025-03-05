@@ -1,9 +1,15 @@
+import { useState }  from 'react';
+
 const InstagramPost = ({ picture }) => {
 
-  let likes = 0;
+  const [likes, setLikes] = useState(0);
+  // let likes = 0;
 
   const handleClick = () => {
-
+    // likes++;
+    // console.log(likes);
+    setLikes((currentLikes)=> currentLikes + 1);
+    // setLikes(likes + 1); we can use this but it is not recommended
   }
 
   return (
